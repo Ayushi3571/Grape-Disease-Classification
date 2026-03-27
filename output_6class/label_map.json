@@ -1,0 +1,18 @@
+{
+  "label2id": {
+    "Grape__Downey_Mildew": 0,
+    "Grape__Powdery_Mildew": 1,
+    "Grape___Black_rot": 2,
+    "Grape___Esca_(Black_Measles)": 3,
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": 4,
+    "Grape___healthy": 5
+  },
+  "id2label": {
+    "0": "Grape__Downey_Mildew",
+    "1": "Grape__Powdery_Mildew",
+    "2": "Grape___Black_rot",
+    "3": "Grape___Esca_(Black_Measles)",
+    "4": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+    "5": "Grape___healthy"
+  }
+}
