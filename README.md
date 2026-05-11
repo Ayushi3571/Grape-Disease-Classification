@@ -1,6 +1,21 @@
-# Leaf Disease ViT Training
+# Grape Disease Classification with Vision Transformers
 
-This project trains a Vision Transformer (ViT) classifier for grape leaf disease detection using the pipeline in `train.py`.
+This project fine-tunes a Vision Transformer for early-stage grape disease classification using a custom preprocessing pipeline designed for noisy agricultural imagery.
+
+The model converts each input image into a 3-channel representation:
+1. grayscale texture from the original image,
+2. disease-signal mask highlighting lesions and dark marks,
+3. edge/structure map preserving veins and lesion boundaries.
+
+This was my ML/CV contribution to a precision agriculture capstone project built with a local nonprofit. The goal was to help farmers detect disease signals earlier and support better crop-management decisions.
+
+## Results
+
+- Classes: 6 grape leaf disease/health categories
+- Model: `google/vit-base-patch16-224-in21k` fine-tuned with a custom classification head
+- Input: 224x224 3-channel preprocessed representation
+- Evaluation: validation accuracy, classification report, confusion matrix
+- Best validation accuracy: 97%
 
 ## Dataset Layout
 
